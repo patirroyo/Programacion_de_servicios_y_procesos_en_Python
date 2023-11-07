@@ -14,7 +14,7 @@ def tareaUno():
 
 Done = False
 hilos = list()
-for i in range(50):
+for i in range(5):
   t = threading.Thread(target=tareaUno)
   hilos.append(t)
   t.start()

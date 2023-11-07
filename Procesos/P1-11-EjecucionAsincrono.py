@@ -4,12 +4,12 @@ import asyncio
 
 def showNotepad1():  
   try:
-    subprocess.run(['Notepad.exe',])
+    subprocess.run(['lvim',])
   except subprocess.CalledProcessError as e:
       print(e.output)
 async def showNotepad2():  
   try:
-    await asyncio.create_subprocess_exec('notepad.exe')
+    await asyncio.create_subprocess_exec('lvim')
   except subprocess.CalledProcessError as e:
       print(e.output)
 

@@ -7,10 +7,12 @@ def tareaUno():
   #time.sleep (random.random())
   if not Realizado:
     print("Tarea realizada")  
-    Realizado = True    
+    Realizado = True 
+    print("Realizado: ", Realizado)   
   return
 
 Realizado = False
+print("Realizado: ", Realizado)  
 t = threading.Thread(target=tareaUno)
 t.start()
 tareaUno()

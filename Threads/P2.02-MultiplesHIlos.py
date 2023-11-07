@@ -10,4 +10,5 @@ for i in range(50):
   t = threading.Thread(target=actividad)
   hilos.append(t)
   t.start()
+  #t.join() con esto espero a que acaben los hilos y luego continúo
 print ("ESCRIBO EN PRINCIPAL")

@@ -4,7 +4,7 @@ for proc in psutil.process_iter():
   try:
     # Obtener el nombre del proceso
     nombreProceso = proc.name()    
-    if proc.name() == "notepad.exe":
+    if proc.name() == "nvim":
       PID = proc.pid
       print("Eliminando el proceso: ", nombreProceso , ' ::: ', PID)
       proc.kill()    

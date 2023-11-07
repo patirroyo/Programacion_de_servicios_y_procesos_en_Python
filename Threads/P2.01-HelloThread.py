@@ -2,7 +2,7 @@ import threading
 
 #método al que se va a aosciar el hilo
 def Saludo():
-  print ('hola')
+  print ('saludo')
 
 t = threading.Thread(target=Saludo)
 t.start()    
